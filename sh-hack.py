@@ -1,6 +1,5 @@
-# Encoded By PyEncryptor
-# A Product Of ToxicNoob
-# https://github.com/Toxic-Noob
+# Encoded By SH-Encryptor
+# https://github.com/ShTasrif
 
 import marshal, base64, zlib
 
