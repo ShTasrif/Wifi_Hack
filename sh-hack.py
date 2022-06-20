@@ -17,8 +17,26 @@ import statistics
 import csv
 from typing import Dict
 
+os.system("clear")
+yellow = '\33[93m'
+green = '\033[1;32m'
+cyan  = "\033[96m"
+
+print(yellow+"""      _____      _                  _____ _    _
+     / ____|    | |                / ____| |  | |
+    | |    _   _| |__   ___ _ __  | (___ | |__| |
+    | |   | | | | '_ \ / _ \ '__|  \___ \|  __  |
+    | |___| |_| | |_) |  __/ |     ____) | |  | |
+     \_____\__, |_.__/ \___|_|    |_____/|_|  |_|
+            __/ |
+           |___/  
+""")
+print(green+"\t\tDevoloped By : SH TASRIF \n")
+
+print(cyan+"\t         ✯✯ CyberSH WiFi Hack ✯✯\n")
+print(yellow+"============================================================================")
 print('''
-\033[1;92m Recoded By CyberSH
+\033[1;92m \nRecoded By CyberSH
 Telegram:https://t.me/cybershbd
 One line Command:\nsudo python Wifi_Hack/sh-hack.py -i wlan0 -K\n
 For Help Type:\npython Wifi_Hack/sh-hack.py --help\033[0m
@@ -788,7 +806,7 @@ class Companion:
                 self.__second_half_bruteforce(bssid, f_half, s_half, delay)
             raise KeyboardInterrupt
         except KeyboardInterrupt:
-            print("\nAborting…\nStay With\nTHBD")
+            print("\nAborting…\nStay With\nCyberSH")
             filename = self.sessions_dir + '{}.run'.format(bssid.replace(':', '').upper())
             with open(filename, 'w') as file:
                 file.write(self.bruteforce.mask)
@@ -1179,12 +1197,12 @@ if __name__ == '__main__':
         except KeyboardInterrupt:
             if args.loop:
                 if input("\n[?] Exit the script (otherwise continue to AP scan)? [N/y] ").lower() == 'y':
-                    print("Aborting…\nStay With\nTHBD")
+                    print("Aborting…\nStay With\nCyberSH")
                     break
                 else:
                     args.bssid = None
             else:
-                print("\nAborting…\nStay With\nTHBD")
+                print("\nAborting…\nStay With\nCyberSH")
                 break
 
     if args.iface_down:
