@@ -5,14 +5,14 @@
 
 ### Installation :
 
-```bash
-$ apt update && apt upgrade
-$ pkg install -y root-repo
-$ pkg install -y git tsu python wpa-supplicant pixiewps iw
-$ git clone https://github.com/ShTasrif/Wifi_Hack
-$ cd Wifi_Hack
-$ chmod +x sh-hack.py
-$ sudo python sh-hack.py --help
+```
+apt update && apt upgrade -y
+pkg install -y root-repo -y
+pkg install -y git tsu python wpa-supplicant pixiewps iw -y
+git clone https://github.com/ShTasrif/Wifi_Hack
+cd Wifi_Hack
+chmod +x sh-hack.py
+sudo python sh-hack.py --help
 ```
 
 #### Example : `sudo python sh-hack.py -i wlan0 -K`
